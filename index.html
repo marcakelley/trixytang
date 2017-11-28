@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html style="height:100%">
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#mainContent").load("home.html");
+			$("#homelink").click(function(){
+				$("#mainContent").load("home.html");
+			});
+			$("#bandlink").click(function(){
+				$("#mainContent").load("band.html");
+			});
+			$("#listenlink").click(function(){
+				$("#mainContent").load("listen.html");
+			});
+			$("#tourlink").click(function(){
+				$("#mainContent").load("tour.html");
+			});
+			$("#bookinglink").click(function(){
+				$("#mainContent").load("booking.html");
+			});
+			$("#homelinkm").click(function(){
+				$("#mainContent").load("home.html");
+			});
+			$("#bandlinkm").click(function(){
+				$("#mainContent").load("band.html");
+			});
+			$("#listenlinkm").click(function(){
+				$("#mainContent").load("listen.html");
+			});
+			$("#tourlinkm").click(function(){
+				$("#mainContent").load("tour.html");
+			});
+			$("#bookinglinkm").click(function(){
+				$("#mainContent").load("booking.html");
+			});
+		});
+		function mobileToggle() {
+			document.getElementsByClassName("mobile-links")[0].classList.toggle("responsive");
+		}
+	</script>
+	<link rel="icon" href="trixyicon.ico" type="image/x-icon">
+	<title>Trixy Tang | Official Site</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Official site for Grand Rapids based hard rock band featuring Live Dates, Band Photos, Audio, and More.">
+	<link rel="stylesheet" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	<style>
+		@media(max-width: 1200px) {
+			.linkFont {
+				font-size: 17pt;
+				padding: 0px 18px;
+			}
+			#menu-links { 
+				left: 22%;
+				top: 40px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div id="main">
+		<div id="wrapper" style="margin-top:100px;padding-bottom:80px;">
+			<div id="mainContent"></div>
+		</div>
+	</div>
+	<div id="top">
+		<div id="menu-wrapper">
+			<img src="/images/TTLogo2.png" style="height:88px;margin-bottom:-3px;margin-top:5px;padding-right:20px;padding-left:10px;" alt="Trixy Tang">
+			<div id="menu-links">
+				<a href="#" class="linkFont" id="homelink">HOME</a>
+				<a href="#" class="linkFont" id="bandlink">BAND</a>
+				<a href="#" class="linkFont" id="listenlink">LISTEN</a>
+				<a href="#" class="linkFont" id="tourlink">TOUR DATES</a>
+				<a href="#" class="linkFont" id="bookinglink">BOOKING</a>
+			</div>
+		</div>
+		<div id="wrapper">
+			<ul class="mobile-links">
+				<li><a href="#" class="linkFontMobile" id="homelinkm" onclick="mobileToggle()">TRIXY TANG</a></li>
+				<li><a href="#" class="linkFontMobile" id="bandlinkm" onclick="mobileToggle()">BAND</a></li>
+				<li><a href="#" class="linkFontMobile" id="listenlinkm" onclick="mobileToggle()">LISTEN</a></li>
+				<li><a href="#" class="linkFontMobile" id="tourlinkm" onclick="mobileToggle()">TOUR DATES</a></li>
+				<li><a href="#" class="linkFontMobile" id="bookinglinkm" onclick="mobileToggle()">BOOKING</a></li>
+				<li class="icon">
+					<a href="javascript:void(0);" onclick="mobileToggle()">&#8801;</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="bottom">
+		<div id="wrapper">
+			<audio controls autoplay loop style="margin-top:20px;">
+				<source src="TTStimulation.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+			<div id="bottom-right-links">
+				<a class="fbLink" href="https://www.facebook.com/TrixyTangband" target="_blank" style="margin-left:6px;margin-right:6px;">Trixy Tang Facebook</a>
+				<a class="ytLink" href="https://www.youtube.com/channel/UCOA3dpleOgUlNqqzMNlL6Iw" target="_blank" style="margin-left:6px;margin-right:6px;">Trixy Tang YouTube</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
